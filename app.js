@@ -9,7 +9,8 @@ function urlWithText(text) {
 }
 
 function errorHandler(error) {
-  console.log("Error Occured", error);
+  outputDiv.innerHTML = `<p style="color: red;">Some error occured: ${error.message}</p>
+  `;
 }
 
 function btnTranslateHandler() {
